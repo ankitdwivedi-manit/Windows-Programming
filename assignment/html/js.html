@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Web-Development</title>
+    <style>
+        .aside {
+            width: 20%;
+        }
+
+        .article {
+            width: 80%;
+        }
+        .footer{
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="menu">
+            <ul>
+                <li> <a href="../html/main.html"> HOME </a> </li>
+                <li> <a href="../html/html.html"> HTML </a> </li>
+                <li> <a href="../html/css.html"> CSS </a> </li>
+                <li> <a href="../html/js.html"> JAVASCRIPT </a> </li>
+            </ul>
+        </div>
+        <!-- <div class="contact">
+            <a href="">Contact-Us</a>
+        </div> -->
+    </header>
+    <div class="welcome-note">
+        <h1>JavaScript</h1>
+    </div>
+    <div class="content">
+        <aside class="aside">
+            <ul>
+                <li> <a href="#item1">JavaScript Introduction</a> </li>
+                <li> <a href="#item2">JavaScript Output</a> </li>
+                <li> <a href="#item3">JavaScript Statements</a> </li>
+                <li> <a href="#item4">JavaScript Comments</a></li>
+                <li> <a href="#item5">JavaScript Variables</a> </li>
+            </ul>
+        </aside>
+        <article class="article">
+            <h1 id="item1">What JavaScript can do?</h1>
+            <p>
+            <ul>
+                <li>
+                    <h2>JavaScript Can Change HTML Content</h2>
+                    One of many JavaScript HTML methods is getElementById().
+                    <br> <br>
+                    The example below "finds" an HTML element (with id="demo"), and changes the element content <br> <br>
+                    (innerHTML) to "Hello JavaScript": <br> <br>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript"; 
+                </li>
+                <li>
+                    <h2>JavaScript Can Change HTML Attribute Values</h2>
+                </li>
+                <li>
+                    <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+                    Changing the style of an HTML element, is a variant of changing an HTML attribute: <br> <br>
+                    document.getElementById("demo").style.fontSize = "35px"; 
+                </li>
+                <li>
+                    <h2>JavaScript Can Hide HTML Elements</h2>
+                    Hiding HTML elements can be done by changing the display style: <br> <br>
+                    document.getElementById("demo").style.display = "none"; 
+                </li>
+                <li>
+                    <h2>JavaScript Can Show HTML Elements</h2>
+                    Showing hidden HTML elements can also be done by changing the display style: <br> <br>
+                    document.getElementById("demo").style.display = "block"; 
+                </li>
+            </ul>
+            </p>
+
+            <h1 id="item2">JavaScript Output</h1>
+            <p>
+                <h4>JavaScript Display Possibilities :</h4> 
+                JavaScript can "display" data in different ways:
+                <ul>
+                    <li>Writing into an HTML element, using innerHTML.</li>
+                    <li> Writing into the HTML output using document.write().</li>
+                    <li>Writing into an alert box, using window.alert().</li>
+                    <li>Writing into the browser console, using console.log().</li>
+                </ul>
+    
+            </p>
+
+            <h1 id="item3">JavaScript Statements</h1>
+            <p>
+                JavaScript statements are composed of: <br> <br>
+                Values, Operators, Expressions, Keywords, and Comments.<br> <br>
+                This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":<br> <br>
+                Example<br>
+                document.getElementById("demo").innerHTML = "Hello Dolly."; 
+            </p>
+
+            <h1 id="item4">JavaScript Comments</h1>
+            <p>
+                JavaScript comments can be used to explain JavaScript code, and to make it more readable. <br> <br>
+                JavaScript comments can also be used to prevent execution, when testing alternative code. <br> <br>
+                <h3>Single Line Comments</h3> 
+                Single line comments start with //.<br> <br>
+                Any text between // and the end of the line will be ignored by JavaScript (will not be executed).<br> <br>
+                <h3>Multi-line Comments</h3> 
+                Multi-line comments start with /* and end with */. <br> <br>
+                Any text between /* and */ will be ignored by JavaScript.
+            </p>
+
+            <h1 id="item5">JavaScript Variables</h1>
+            <p>
+                JavaScript variables are containers for storing data values. <br> <br>
+                Example <br> <br>
+                var x = 5; <br>
+                var y = 6; <br>
+                var z = x + y;
+            </p>
+        </article>
+    </div>
+    <footer class="footer">
+      <p>Name : Ankit Dwivedi<br>
+          Scholar No. : 192120016 <br>
+      <a href="mailto:ankitdwivedi5155@gmail.com">ankitdwivedi5155@gmail.com</a></p>
+  </footer>
+</body>
+
+</html>
